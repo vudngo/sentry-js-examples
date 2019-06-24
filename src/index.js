@@ -1,10 +1,13 @@
 import { init } from "@sentry/browser";
-import "./styles.css";
 
-document.getElementById("app").innerHTML = `
-<h1>Hello Vanilla!</h1>
-<div>
-  We use Parcel to bundle this sandbox, you can find more info about Parcel
-  <a href="https://parceljs.org" target="_blank" rel="noopener noreferrer">here</a>.
-</div>
-`;
+import React from "react";
+import { render } from "react-dom";
+import { BrowserRouter } from "react-router-dom";
+import Routes from "./Routes";
+
+render(
+  <BrowserRouter>
+    <Routes />
+  </BrowserRouter>,
+  document.getElementById("root")
+);

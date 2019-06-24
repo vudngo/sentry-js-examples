@@ -8,7 +8,11 @@
     "build": "parcel build index.html"
   },
   "dependencies": {
-    "@sentry/browser": "5.4.3"
+    "@sentry/browser": "5.4.3",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "react-router": "5.0.1",
+    "react-router-dom": "5.0.1"
   },
   "devDependencies": {
     "@babel/core": "7.2.0",
